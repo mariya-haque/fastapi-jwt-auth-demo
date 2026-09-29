@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI JWT Authentication</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>FastAPI JWT Authentication</h1>
+
+    <!-- SIGNUP -->
+
+    <div class="card">
+
+        <h2>Sign Up</h2>
+
+        <input type="text" id="signup_username" placeholder="Username">
+
+        <input type="email" id="signup_email" placeholder="Email">
+
+        <input type="password" id="signup_password" placeholder="Password">
+
+        <button onclick="signup()">Sign Up</button>
+
+    </div>
+
+    <!-- LOGIN -->
+
+    <div class="card">
+
+        <h2>Login</h2>
+
+        <input type="text" id="login_username" placeholder="Username">
+
+        <input type="password" id="login_password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+    </div>
+
+    <!-- ACTIONS -->
+
+    <div class="card">
+
+        <button onclick="profile()">Get Profile</button>
+
+        <button onclick="getUsers()">Show Users</button>
+
+        <button onclick="deleteUser()">Delete User</button>
+
+        <button onclick="logout()">Logout</button>
+
+    </div>
+
+    <h3>Response</h3>
+
+    <pre id="output"></pre>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
